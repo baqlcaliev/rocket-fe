@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400&display=swap');
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #3e2016;
+}
+
+h1 {
+    font-size: 36px;
+    padding: 87px 0px 95px;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.btn {
+    background-color: #90593c;
+    max-width: 250px;
+    width: 100%;
+    color: white;
+    padding: 10px 0px;
+    margin: auto;
+    margin: 80px auto 110px;
+    display: block;
+    border-radius: 8px;
+    font-size: 22px;
+    text-transform: lowercase;
+    line-height: 27px;
+}
+
+.btn:hover {
+    color: #a97b56;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #47261a;
+}
+
+.nav-item {
+    font-size: 24px;
+}
+
+.navbar-nav .nav-item:nth-child(1)::before {
+    content: "|";
+    padding-right: 29px;
+}
+
+.navbar-nav .nav-item:after {
+    content: "|";
+    padding-left: 29px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #90593c;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #90593c;
+}
+
+.intro .container {
+    max-width: 1360px;
+    width: 100%;
+}
+
+.intro p {
+    padding-bottom: 190px;
+    font-size: 21px;
+}
+
+.intro h1,
+.gallery h1 {
+    color: #3e2016;
+    font-weight: bold;
+}
+
+.mainContainer {
+    max-width: 1600px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    max-width: 240px;
+}
+
+.mainImage {
+    height: 661px;
+    background-image: url("../css/images/jumbotron-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.intro h3 {
+    color: #3e2016;
+}
+
+.fourItems h1 {
+    color: white;
+}
+
+.fourItems .fourBoxes {
+    padding: 25px 25px 25px 45px;
+    margin: 1% 0px;
+    flex: 0 0 47.666667%;
+    max-width: 47.666667%;
+    text-align: center;
+}
+
+.fourItems {
+    justify-content: space-around;
+}
+
+.fourBoxes h3 {
+    color: #90593c;
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+
+.textSection {
+    max-width: 488px;
+}
+
+.textSection p {
+    font-style: italic;
+    font-size: 22px;
+    line-height: 23px;
+    color: black;
+}
+
+.gallery {
+    justify-content: space-between
+}
+
+footer {
+    color: white;
+}
+
+.socialFooter a,
+.copyright div:nth-child(2) a {
+    color: white;
+    vertical-align: middle;
+}
+
+.socialFooter i,
+.copyright div:nth-child(3) div {
+    padding-right: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/*or bg-dark???*/
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px 52px 0px;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.copyrightItem {
+    vertical-align: middle;
+}
+
+.container-outer {
+    background-color: #191919;
+}
+
+
+/*Google map*/
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 100%;
+    position: relative;
+    height: 0;
+    border-radius: 2%;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.contactBox,
+.weekBox {
+    display: flex;
+}
+
+.contactBox i {
+    width: 22px;
+    margin-right: 17px;
+}
+
+.contactBox:not(:last-child) {
+    padding-bottom: 26px;
+}
+
+.contactBox:last-child {
+    padding-bottom: 10px;
+}
+
+.weekBox {
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.footerBox {
+    padding: 0px 70px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.mt-35 {
+    margin-top: 34px;
+}
+
+.fbTop {
+    position: absolute;
+    right: -260px;
+    top: 5px;
+}
+
+@media(max-width:1532px) {
+    .fbTop {
+        position: relative;
+        right: initial;
+        top: initial;
+    }
+    .nav-item {
+        font-size: 18px;
+    }
+    .navbar-nav .nav-item:nth-child(1)::before {
+        content: "";
+        padding-right: 0px;
+    }
+    .navbar-nav .nav-item:after {
+        content: "";
+        padding-left: 0px;
+    }
+}
+
+@media(max-width:860px) {
+    .intro p,
+    h1 {
+        padding: 15px 0px;
+    }
+    .logo {
+        max-width: 190px;
+    }
+    .mainContainer:not(:first-child) {
+        max-width: initial;
+        margin: initial;
+        width: auto;
+        display: initial;
+    }
+    .copyright,
+    footer .row {
+        display: block;
+        padding: 13px;
+    }
+    .footerBox {
+        margin: 15px 0px;
+        padding: 0px;
+    }
+    .fourItems .fourBoxes {
+        flex: 0 0 95.666667%;
+        max-width: 95.666667%;
+        margin: auto;
+    }
+    .pb-100 {
+        padding-bottom: 10px;
+    }
+    .gallery-item {
+        text-align: center;
+    }
+    .copyright {
+        text-align: left !important;
+        line-height: 37px;
+    }
+    .btn {
+        margin: 20px auto;
+    }
+}
+
+@media(max-width:768px) {
+    .mainContainer:first-child {
+        display: block;
+    }
+}
