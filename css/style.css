@@ -308,8 +308,11 @@ footer {
     }
 }
 
-@media(max-width:768px) {
+@media(max-width:767px) {
     .mainContainer:first-child {
         display: block;
+    }
+    .fourBoxes {
+        text-align: left !important
     }
 }
